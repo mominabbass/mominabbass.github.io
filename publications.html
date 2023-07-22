@@ -31,7 +31,7 @@
 </ul>
 
 	      
-<!--  <div class="container-fluid">
+ <div class="container-fluid">
       <div class="row">
         <div id="gridid" class="col-sm-12">
   <h1 id="group-projects-highlights">Group Highlights</h1>
@@ -63,142 +63,9 @@
 	</div>
 </div>
 </div>
-</div>	       -->
+</div>	      
 
-    <div class="container-fluid">
-      <div class="row">
-        <div id="gridid" class="col-sm-12">
-  <h1 id="group-projects-highlights">Group projects highlights</h1>
-
-<p>Authors marked in <span style="color:blue">blue</span> indicate our group members, and “*” indicates equal contribution.<br /></p>
-
-<div class="row">
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>Understanding and Improving Visual Prompting: A Label-Mapping Perspective</pubtit>
-      <p><img src="/images/pubpic/ilmvp_cvpr23.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>We revisit and advance visual prompting (VP), an input prompting technique for vision tasks. VP can reprogram a fixed, pre-trained source model to accomplish downstream tasks in the target domain by simply incorporating universal prompts (in terms of input perturbation patterns) into downstream data points. Yet, it remains elusive why VP stays effective even given a ruleless label mapping (LM) between the source classes and the target classes. Inspired by the above, we ask: How is LM interrelated with VP? And how to exploit such a relationship to improve its accuracy on target tasks? We peer into the influence of LM on VP and provide an affirmative answer that a better ’quality’ of LM (assessed by mapping precision and explanation) can consistently improve the effectiveness of VP. This is in contrast to the prior art where the factor of LM was missing. To optimize LM, we propose a new VP framework, termed ILM-VP (iterative label mapping-based visual prompting), which automatically re-maps the source labels to the target labels and progressively improves the target task accuracy of VP. Further, when using a contrastive language-image pretrained (CLIP) model, we propose to integrate an LM process to assist the text prompt selection of CLIP and to improve the target task accuracy. Extensive experiments demonstrate that our proposal significantly outperforms state-of-the-art VP methods. As highlighted below, we show that when reprogramming an ImageNet-pretrained ResNet-18 to 13 target tasks, our method outperforms baselines by a substantial margin, e.g., 7.9% and 6.7% accuracy improvements in transfer learning to the target Flowers102 and CIFAR100 datasets. Besides, our proposal on CLIP-based VP provides 13.7% and 7.1% accuracy improvements on Flowers102 and DTD respectively.</p>
-      <p><em><span style="color:blue">A. Chen</span>, <span style="color:blue">Y. Yao</span>, P. Chen, <span style="color:blue">Y. Zhang</span>, <span style="color:blue">S. Liu</span></em></p>
-      <p><strong><a href="https://arxiv.org/abs/2211.11635">CVPR’23</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/ilmvp_cvpr23">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>Text-Visual Prompting for Efficient 2D Temporal Video Grounding</pubtit>
-      <p><img src="/images/pubpic/2dtvp_cvpr23.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>In this paper, we study the problem of temporal video grounding (TVG), which aims to predict the starting/ending time points of moments described by a text sentence within a long untrimmed video. Benefiting from fine-grained 3D visual features, the TVG techniques have achieved remarkable progress in recent years. However, the high complexity of 3D convolutional neural networks (CNNs) makes extracting dense 3D visual features time-consuming, which calls for intensive memory and computing resources. Towards efficient TVG, we propose a novel text-visual prompting (TVP) framework, which incorporates optimized perturbation patterns (that we call ‘prompts’) into both visual inputs and textual features of a TVG model. In sharp contrast to 3D CNNs, we show that TVP allows us to effectively co-train vision encoder and language encoder in a 2D TVG model and improves the performance of crossmodal feature fusion using only low-complexity sparse 2D visual features. Further, we propose a Temporal-Distance IoU (TDIoU) loss for efficient learning of TVG. Experiments on two benchmark datasets, Charades-STA and Ac- tivityNet Captions datasets, empirically show that the pro- posed TVP significantly boosts the performance of 2D TVG (e.g., 9.79% improvement on Charades-STA and 30.77% improvement on ActivityNet Captions) and achieves 5× inference acceleration over TVG using 3D visual features.</p>
-      <p><em><span style="color:blue">Y. Zhang</span>, X. Chen, <span style="color:blue">J. Jia</span>, <span style="color:blue">S. Liu</span>, K. Ding</em></p>
-      <p><strong><a href="https://arxiv.org/abs/2303.04995">CVPR’23</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/2dtvp_cvpr23">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-</div>
-
-<div class="row">
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>Advancing Model Pruning via Bi-level Optimization</pubtit>
-      <p><img src="/images/pubpic/bip_neurips22.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>In this work, we advance the optimization foundations of the pruning problem and close the gap between pruning accuracy and pruning efficiency. we formulate the pruning problem from a fresh and novel viewpoint, bi-level optimization (BLO). We show that the BLO interpretation provides a technically-grounded optimization base for an efficient implementation of the pruning-retraining learning paradigm used in IMP. We also show that the proposed bi-level optimization-oriented pruning method (termed BIP) is a special class of BLO problems with a bi-linear problem structure. Through thorough experiments on various datasets and model architectures, we demonstrate that BiP can achieve the state-of-the-art pruning accuray in both structured and unstructured pruning setting. and is  computationally as efficient as the one-shot pruning schemes, demonstrating an 2~7 times speed up over the current SOTA pruning baseline (IMP) for the same level of model accuracy and sparsity.</p>
-      <p><em><span style="color:blue">Y. Zhang*</span>, <span style="color:blue">Y. Yao*</span>, P. Ram, P. Zhao, T. Chen, M. Hong, Y. Wang, <span style="color:blue">S. Liu</span></em></p>
-      <p><strong><a href="https://arxiv.org/pdf/2210.04092.pdf">NeurIPS’22</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/bip_neurips22">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>Fairness Reprogramming</pubtit>
-      <p><img src="/images/pubpic/fairness_neurips22.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>Despite a surge of recent advances in promoting machine Learning (ML) fairness, the existing mainstream approaches mostly require retraining or finetuning the entire weights of the neural network to meet the fairness criteria. However, this is often infeasible in practice for those large-scale trained models due to large computational and storage costs, low data efficiency, and model privacy issues. In this paper, we propose a new generic fairness learning paradigm, called FairnessReprogram, which incorporates the model reprogramming technique. Specifically, FairnessReprogram considers the case where models can not be changed and appends to the input a set of perturbations, called the fairness trigger, which is tuned towards the fairness criteria under a min-max formulation. We further introduce an information-theoretic framework that explains why and under what conditions fairness goals can be achieved using the fairness trigger. Extensive experiments on both NLP and CV datasets demonstrate that our method can achieve better fairness improvements than retraining-based methods with far less data dependency under two widely-used fairness criteria.</p>
-      <p><em>G. Zhang*, <span style="color:blue">Y. Zhang*</span>, Y. Zhang, W. Fan, Q. Li, <span style="color:blue">S. Liu</span>, S. Chang</em></p>
-      <p><strong><a href="https://arxiv.org/abs/2209.10222.pdf">NeurIPS’22</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/fairness_neurips22">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-</div>
-
-<div class="row">
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>Revisiting and Advancing Fast Adversarial Training through the Lens of Bi-level Optimization</pubtit>
-      <p><img src="/images/pubpic/fastbat_icml22.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>This work reformulates the problem of adversarial training (AT) to a bi-level optimization problem (BLO). BLO advances the optimization foundations of AT. We first show that the commonly-used Fast-AT is equivalent to using a stochastic gradient algorithm to solve a linearized BLO problem involving a sign operation. However, the discrete nature of the sign operation makes it difficult to understand the algorithm performance. Inspired by BLO, we design and analyze a new set of robust training algorithms termed Fast Bi-level AT (Fast-BAT), which effectively defends sign-based projected gradient descent (PGD) attacks without using any gradient sign method or explicit robust regularization. In practice, we show that our method yields substantial robustness improvements over multiple baselines across multiple models and datasets.</p>
-      <p><em><span style="color:blue">Y. Zhang*</span>, <span style="color:black">G. Zhang*</span>, P. Khanduri, M. Hong, S. Chang, and <span style="color:blue">S. Liu</span></em></p>
-      <p><strong><a href="https://arxiv.org/pdf/2112.12376.pdf">ICML’22.</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/fastbat_icml22">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free</pubtit>
-      <p><img src="/images/pubpic/backdoor_cvpr22.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>This paper revealed that for a backdoored model, Trojan features learned are more stable against pruning than benign features! We further observed the existence of the ‘winning Trojan ticket’ which preserves the Trojan attack performance while retaining chance-level performance on clean inputs. Further, we propose a clean data-free algorithm to detect and reverse engineer the Trojan attacks.</p>
-      <p><em><span style="color:black">T. Chen*</span>, <span style="color:black">Z. Zhang*</span>, <span style="color:blue">Y. Zhang*</span>, S. Chang, <span style="color:blue">S. Liu</span>, Z. Wang</em></p>
-      <p><strong><a href="https://arxiv.org/pdf/2205.11819.pdf">CVPR’22</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/backdoor_cvpr22">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-</div>
-
-<div class="row">
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>Reverse Engineering of Imperceptible Adversarial Image Perturbations</pubtit>
-      <p><img src="/images/pubpic/RED.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>In this paper, we study the problem of Reverse Engineering of Deceptions (RED), with the goal to recover the attack toolchain signatures (e.g. adversarial perturbations and adversary salience image regions) from an adversarial instance. Our work makes a solid step towards formalizing the RED problem and developing a systematic RED pipeline, covering not only a solution method but also a complete set of evaluation metrics.</p>
-      <p><em><span style="color:black">Y. Gong*</span>, <span style="color:blue">Y. Yao*</span>, Y. Li, Y. Zhang, X. Liu, X. Lin, <span style="color:blue">S. Liu</span></em></p>
-      <p><strong><a href="https://openreview.net/forum?id=gpp7cf0xdfN">ICLR’22</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-  <div class="col-sm-6 clearfix">
-    <div class="well">
-      <pubtit>How to Robustify Black-Box ML Models? A Zeroth-Order Optimization Perspective</pubtit>
-      <p><img src="/images/pubpic/black_box.png" class="img-responsive" width="100%" style="float: left" /></p>
-      <p>In this paper, we study the problem of black-box defense, aiming to secure black-box models against adversarial attacks using only input-output model queries. We integrate denoised smoothing (DS) with ZO (zerothorder) optimization to build a feasible black-box defense framework. We further propose ZO-AE-DS, which leverages autoencoder (AE) to bridge the gap between FO and ZO optimization.</p>
-      <p><em><span style="color:blue">Y. Zhang</span>, <span style="color:blue">Y. Yao</span>, <span style="color:blue">J. Jia</span>, J. Yi, M. Hong, S. Chang, <span style="color:blue">S. Liu</span></em></p>
-      <p><strong><a href="https://openreview.net/forum?id=W9G_ImpHlQd">ICLR’22 (<span style="color:red">spotlight, acceptance rate 5%</span>)</a></strong></p>
-      <p class="text-danger"><strong> </strong></p>
-      <p> </p>
-      <p><a href="/posts/">Click here to read the full article.</a></p>
-    </div>
-  </div>
-
-</div>
-
-
-</div>
-
-      </div>
-    </div>
-	      
-	      
+		      
 </ul>
 <h2>Representative/Recent Works</h2>
 <ul>

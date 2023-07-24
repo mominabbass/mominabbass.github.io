@@ -61,6 +61,8 @@ a.text-danger:hover, a.text-danger:focus { color: #e6e6e6; }
 /* Grid overrides */
 .col-sm-4 { padding-left: 26px; padding-right: 26px; }
 
+.col { padding-left: 16px; padding-right: 16px; }
+
 /* Team & Publications */
 #gridid img { margin: 16px 22px 6px 0; border-radius: 10%; box-shadow: 2px 2px 5px #888888; }
 

@@ -308,4 +308,12 @@ input[type="search"] { -webkit-appearance: none; }
 
 #gridid .row { margin-bottom: 24px; }
 
+.img-responsive { display: block; max-width: 100%; height: auto; }
+
+.text-danger { color: #fff; }
+
+a.text-danger:hover, a.text-danger:focus { color: #e6e6e6; }
+
+.text-danger, .text-danger:hover { color: #FF4136; }
+
 

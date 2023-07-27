@@ -48,7 +48,30 @@ h3 {
 	padding:0 0 7px;
 }
 
+
+.col {
+	float:left;
+	width:286px;
+	margin:0 35px 40px 0;
+}
 .col h3 {
 	border-left:4px solid #B00000;
 	padding:0 0 5px 12px;
+}
+
+.col h33 {
+	border-left:4px solid #B00000;
+	padding:0 0 5px 12px;
+}
+
+
+.col a {
+	font-weight:bold;
+}
+.col p {
+	margin:0 0 10px;
+}
+
+.col h4 {
+	padding:0 0 0 35px;
 }

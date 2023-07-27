@@ -75,3 +75,15 @@ h3 {
 .col h4 {
 	padding:0 0 0 35px;
 }
+
+a {
+	text-decoration:none;
+	color:#2D648A;
+}
+a:hover, a:focus {
+	color:#000;
+}
+p {
+	margin:0 0 15px;
+	line-height:1.6em;
+}

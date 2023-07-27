@@ -45,6 +45,32 @@
 	<div class="row">
 	  <div class="col-sm-6" style="width: 46%">
 	    <div class="well">
+	      <b>A Single-Timescale Method for Stochastic Bilevel Optimization</b>
+	      <p><img src="./img/chen_et_al_2022.png" class="img-responsive" width="100%" style="float: left" /></p>
+	      <p>The paper introduces a novel optimization method called SingleTimescale stochAstic BiLevEl optimization (STABLE) for stochastic bilevel optimization, where the objective depends on the solution of another optimization problem. STABLE uses a single-loop fashion with a fixed batch size, achieving similar sample complexity as stochastic gradient descent (SGD) for single-level optimization. For e-stationary point, it requires O(e^(-2)) samples, and for e-optimal solution in strongly convex cases, O(e^(-1)) samples. STABLE is the first bilevel optimization algorithm with comparable sample complexity to SGD.</p>
+	      <p><em><span style="color:blue">T. Chen</span>, <span style="color:blue">Y. Sun</span>, <span style="color:blue">, <span style="color:blue">Q. Xiao, </span>W. Yin</span></em></p>
+	      <p><strong><a href="https://arxiv.org/abs/2102.04671">AISTATS'22</a></strong></p>
+	      <p class="text-danger"><strong> </strong></p>
+	      <p> </p>
+	    </div>
+	  </div>
+	
+	  <div class="col-sm-6" style="width: 46%">
+	    <div class="well">
+	      <b>CAFE: Catastrophic Data Leakage in Vertical Federated Learning</b>
+	      <p><img src="./img/jin_et_al_2021.png" class="img-responsive" width="100%" style="float: left" /></p>
+	      <p>The paper highlights the risk of private data leakage in distributed machine learning systems like federated learning, through the gradients sharing mechanism. It challenges the defense strategy of increasing batch size to prevent data recovery and introduces a new data leakage attack called "catastrophic data leakage in vertical federated learning" (CAFE). The proposed attack efficiently recovers batch data from shared aggregated gradients. The study demonstrates CAFE's effectiveness in performing large-batch data leakage attacks with improved data recovery quality. The paper also suggests a practical countermeasure to mitigate CAFE and emphasizes the high risk of private data leakage in standard federated learning settings, particularly in vertical cases.</p>
+	      <p><em><span style="color:blue">X. Jin</span>, <span style="color:blue">P. Chen</span>, <span style="color:blue">C. Hsu</span>, <span style="color:blue">C. Yu</span>, <span style="color:blue">T. Chen</span></em></p>
+	      <p><strong><a href="https://arxiv.org/abs/2110.15122">NeurIPS'21</a></strong></p>
+	      <p class="text-danger"><strong> </strong></p>
+	      <p> </p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-sm-6" style="width: 46%">
+	    <div class="well">
 	      <b>Solving Stochastic Compositional Optimization is Nearly as Easy as Solving Stochastic Optimization</b>
 	      <p><img src="./img/chen_et_al_2020.png" class="img-responsive" width="100%" style="float: left" /></p>
 	      <p>This paper introduces Stochastic Compositional Optimization, a generalization of classic stochastic optimization to minimize compositions of functions with nested expectations. The proposed Stochastically Corrected Stochastic Compositional gradient (SCSC) method guarantees convergence at the same rate as SGD for non-compositional stochastic optimization and achieves state-of-the-art performance, particularly when combined with the Adam optimization technique. SCSC is applied and tested in various tasks, including model-agnostic meta-learning and risk-averse portfolio management.</p>

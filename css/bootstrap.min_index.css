@@ -10,7 +10,7 @@
 
 .news {
 	float:right;
-	width:250px;
+	width:220px;
 }
 
 .date {
@@ -51,7 +51,7 @@ h3 {
 
 .col {
 	float:left;
-	width:286px;
+	width:250px;
 	margin:0 35px 40px 0;
 }
 .col h3 {

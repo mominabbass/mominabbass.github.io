@@ -10,7 +10,7 @@
 
 .news {
 	float:right;
-	width:220px;
+	width:240px;
 }
 
 .date {
@@ -37,7 +37,7 @@
 	margin-right:0;
 }
 
-h2, h3, h4, h5, h6, pre, code {
+h3, h4, h5, h6, pre, code {
 	font-weight:normal;
 	color:#000;
 	font-size:1em;

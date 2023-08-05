@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>MLOL@RPI: Projects</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Machine Learning and Optimization Lab, MLOL @ RPI">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+      <link href="css/social-buttons.css" rel="stylesheet">
+	  <script src="./js/w3data.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div w3-include-html="./src/header.html" id="common_header"></div>
+         <hr>
+         <div class="row-fluid">
+               <section id="tutorials">
+                    <h3>Llama 2 Chatbot</h3>
+		       <hr>
+			<script
+				type="module"
+				src="https://gradio.s3-us-west-2.amazonaws.com/3.39.0/gradio.js"
+			></script>
+			
+			<gradio-app src="https://ysharma-explore-llamav2-with-tgi.hf.space"></gradio-app>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Professor Website</title>
-    <link rel="stylesheet" href="css/style_delete.css">
-</head>
 
-<body>
-    <header>
-        <h1>University Professor</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#research">Research Interests</a></li>
-                <li><a href="#publications">Publications</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu odio vel purus elementum ullamcorper. Nullam
-                id massa et purus consectetur euismod at vel metus. Etiam volutpat at est quis malesuada. Suspendisse potenti.
-            </p>
-        </section>
-
-        <section id="research">
-            <h2>Research Interests</h2>
-            <p>
-                Fusce eu lectus sed purus gravida laoreet nec ac odio. Pellentesque ut odio id nunc iaculis congue. Nulla
-                facilisi. Proin euismod finibus erat, ac venenatis enim efficitur et.
-            </p>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>
-                Sed eget pharetra lectus. Nullam varius tortor vitae massa euismod ultrices. Fusce varius auctor tellus, sit
-                amet ullamcorper nisi ultricies a. Curabitur scelerisque quam et enim auctor rhoncus.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>Contact information and other details can go here.</p>
-    </footer>
-
-    <script src="./css/app.js"></script>
-</body>
-
+		       <hr>
+               </section>
+         </div>
+      </div>
+      
+	  <div w3-include-html="./src/footer.html" id="common_footer"></div>
+      
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+	  <script> w3IncludeHTML(include_callback); function include_callback() {$("#nav-projects").addClass("active");}</script>
+   </body>
 </html>
